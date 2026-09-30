@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>King of Pocket | قناة التداول الرسمية</title>
   
-  <!-- خط كايرا العربي الفخم والسريع -->
+  <!-- خط كايرو العربي الفخم والسريع -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
       --primary-green: #00e676;
       --green-glow: rgba(0, 230, 118, 0.4);
       --telegram-blue: #0088cc;
+      --neon-blue: #00d2ff;
       --text-main: #ffffff;
       --text-muted: #94a3b8;
       --accent-gold: #ffb703;
@@ -103,7 +104,16 @@
       font-size: 14px;
       color: var(--text-muted);
       margin-bottom: 24px;
-      line-height: 1.5;
+      line-height: 1.7;
+    }
+
+    /* تأثير النص الأزرق المتوهج */
+    .glow-blue-text {
+      color: var(--neon-blue);
+      font-weight: 800;
+      text-shadow: 0 0 8px rgba(0, 210, 255, 0.7), 0 0 18px rgba(0, 210, 255, 0.4);
+      display: inline-block;
+      margin-top: 4px;
     }
 
     /* أزرار الانضمام المضيئة */
@@ -162,7 +172,7 @@
       padding: 14px 16px;
       border-radius: 14px;
       text-align: right;
-      text-decoration: none; /* إزالة خط الرابط */
+      text-decoration: none;
       cursor: pointer;
       transition: all 0.25s ease;
     }
@@ -237,7 +247,11 @@
     </div>
 
     <h1>King of Pocket</h1>
-    <p class="subtitle">المجتمع المتخصص في التحليل الذكي وتوصيات التداول اليومية</p>
+    <p class="subtitle">
+      المجتمع المتخصص في التحليل الذكي وتوصيات التداول اليومية
+      <br />
+      <span class="glow-blue-text">⚡ واحصل على ثغرات خاصة بالتداول ⚡</span>
+    </p>
 
     <!-- زر الانضمام الرئيسي -->
     <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="glowing-btn">
@@ -245,7 +259,7 @@
       <span>انضم إلى القناة مجاناً</span>
     </a>
 
-    <!-- جميع البطاقات قابلة للنقر وتفتح التليجرام مباشرة -->
+    <!-- البطاقات القابلة للنقر -->
     <div class="features-list">
       
       <!-- 1 -->
