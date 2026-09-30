@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   
-  <!-- مكتبة الأيقونات الفكتوريا الخفيفة -->
+  <!-- مكتبة الأيقونات -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
@@ -47,7 +47,6 @@
       padding: 24px 16px 40px;
     }
 
-    /* حاوية الصفحة بحجم بطاقة هاتف نظيفة */
     .container {
       width: 100%;
       max-width: 480px;
@@ -90,7 +89,6 @@
       border: 2px solid var(--bg-dark);
     }
 
-    /* النصوص الرئيسية */
     h1 {
       font-size: 26px;
       font-weight: 900;
@@ -108,7 +106,7 @@
       line-height: 1.5;
     }
 
-    /* زر الانضمام المضيء النابض */
+    /* أزرار الانضمام المضيئة */
     .glowing-btn {
       width: 100%;
       display: flex;
@@ -144,12 +142,12 @@
       }
     }
 
-    /* قائمة المميزات المبسطة */
+    /* قائمة البطاقات القابلة للنقر */
     .features-list {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 26px;
     }
 
@@ -161,15 +159,19 @@
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       backdrop-filter: blur(8px);
-      padding: 13px 16px;
+      padding: 14px 16px;
       border-radius: 14px;
       text-align: right;
-      transition: transform 0.2s ease, border-color 0.2s ease;
+      text-decoration: none; /* إزالة خط الرابط */
+      cursor: pointer;
+      transition: all 0.25s ease;
     }
 
-    .feature-item:hover {
-      border-color: rgba(0, 230, 118, 0.25);
-      transform: translateX(-3px);
+    .feature-item:hover, .feature-item:active {
+      border-color: rgba(0, 230, 118, 0.45);
+      background: rgba(24, 34, 52, 0.95);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 230, 118, 0.15);
     }
 
     .feature-icon-wrap {
@@ -197,13 +199,13 @@
       color: var(--primary-green);
       font-size: 11px;
       font-weight: 800;
-      padding: 3px 8px;
+      padding: 4px 8px;
       border-radius: 20px;
       border: 1px solid rgba(0, 230, 118, 0.25);
       white-space: nowrap;
     }
 
-    /* إخلاء المسؤولية الدقيق والخافت */
+    /* إخلاء المسؤولية */
     .disclaimer {
       font-size: 9px;
       line-height: 1.6;
@@ -237,78 +239,78 @@
     <h1>King of Pocket</h1>
     <p class="subtitle">المجتمع المتخصص في التحليل الذكي وتوصيات التداول اليومية</p>
 
-    <!-- زر الانضمام المضيء الأساسي -->
+    <!-- زر الانضمام الرئيسي -->
     <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="glowing-btn">
       <i class="fa-brands fa-telegram fa-xl"></i>
       <span>انضم إلى القناة مجاناً</span>
     </a>
 
-    <!-- بطاقات المميزات الستة فقط وببساطة -->
+    <!-- جميع البطاقات قابلة للنقر وتفتح التليجرام مباشرة -->
     <div class="features-list">
       
       <!-- 1 -->
-      <div class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
         <div class="feature-icon-wrap" style="color: #ff5722;">
           <i class="fa-solid fa-robot"></i>
         </div>
         <div class="feature-text">بوت تليجرام لإشارات التداول اللحظية</div>
         <span class="feature-tag">دقة 95% 🔥</span>
-      </div>
+      </a>
 
       <!-- 2 -->
-      <div class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
         <div class="feature-icon-wrap" style="color: #00b0ff;">
           <i class="fa-solid fa-microchip"></i>
         </div>
         <div class="feature-text">انديكيتور تحليلي بنظام الذكاء الاصطناعي</div>
         <span class="feature-tag" style="color: #00b0ff; border-color: rgba(0,176,255,0.3); background: rgba(0,176,255,0.1);">دقة فائقة 💙</span>
-      </div>
+      </a>
 
       <!-- 3 -->
-      <div class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
         <div class="feature-icon-wrap" style="color: #ffb703;">
           <i class="fa-solid fa-shield-halved"></i>
         </div>
         <div class="feature-text">ملف وقواعد إدارة رأس المال الصارمة</div>
         <span class="feature-tag" style="color: #ffb703; border-color: rgba(255,183,3,0.3); background: rgba(255,183,3,0.1);">حماية 💰</span>
-      </div>
+      </a>
 
       <!-- 4 -->
-      <div class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
         <div class="feature-icon-wrap" style="color: #a855f7;">
           <i class="fa-solid fa-graduation-cap"></i>
         </div>
         <div class="feature-text">كورس شامل لتعليم وتطوير مهارات التداول</div>
         <span class="feature-tag" style="color: #c084fc; border-color: rgba(168,85,247,0.3); background: rgba(168,85,247,0.1);">احترافي 📊</span>
-      </div>
+      </a>
 
       <!-- 5 -->
-      <div class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
         <div class="feature-icon-wrap" style="color: #00e676;">
           <i class="fa-solid fa-gem"></i>
         </div>
         <div class="feature-text">توصيات حصرية مباشرة في جروب VIP</div>
         <span class="feature-tag">دقة 97% 🔥</span>
-      </div>
+      </a>
 
       <!-- 6 -->
-      <div class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
         <div class="feature-icon-wrap" style="color: #38bdf8;">
           <i class="fa-solid fa-headset"></i>
         </div>
         <div class="feature-text">دعم فني ومتابعة شخصية للاستفسارات</div>
         <span class="feature-tag" style="color: #38bdf8; border-color: rgba(56,189,248,0.3); background: rgba(56,189,248,0.1);">24/7 💎</span>
-      </div>
+      </a>
 
     </div>
 
-    <!-- زر تأكيدي إضافي في الأسفل -->
+    <!-- زر تأكيدي سفلي -->
     <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="glowing-btn">
       <i class="fa-solid fa-arrow-left"></i>
       <span>دخول القناة الآن</span>
     </a>
 
-    <!-- إخلاء المسؤولية بخط صغير وهادئ جداً -->
+    <!-- إخلاء المسؤولية -->
     <footer class="disclaimer">
       <strong>إخلاء مسؤولية:</strong> التداول في الأسواق المالية والخيارات الرقمية ينطوي على مخاطر عالية وقد لا يناسب جميع المستثمرين. المعلومات والإشارات المقدمة عبر القناة والمؤشرات هي لأغراض تعليمية وإرشادية فقط وليست استشارة مالية أو استثمارية مباشرة. أنت المسؤول الوحيد عن قراراتك التداولية وإدارتك لرأس المال.
     </footer>
