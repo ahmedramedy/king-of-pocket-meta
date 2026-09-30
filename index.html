@@ -5,7 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>King of Pocket | قناة التداول الرسمية</title>
   
-  <!-- خط كايرو العربي الفخم والسريع -->
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4409346499321380');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=4409346499321380&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- خط كايرو العربي -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -107,7 +126,6 @@
       line-height: 1.7;
     }
 
-    /* تأثير النص الأزرق المتوهج */
     .glow-blue-text {
       color: var(--neon-blue);
       font-weight: 800;
@@ -152,7 +170,7 @@
       }
     }
 
-    /* قائمة البطاقات القابلة للنقر */
+    /* قائمة البطاقات */
     .features-list {
       width: 100%;
       display: flex;
@@ -254,7 +272,7 @@
     </p>
 
     <!-- زر الانضمام الرئيسي -->
-    <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="glowing-btn">
+    <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="glowing-btn telegram-link">
       <i class="fa-brands fa-telegram fa-xl"></i>
       <span>انضم إلى القناة مجاناً</span>
     </a>
@@ -263,7 +281,7 @@
     <div class="features-list">
       
       <!-- 1 -->
-      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item telegram-link">
         <div class="feature-icon-wrap" style="color: #ff5722;">
           <i class="fa-solid fa-robot"></i>
         </div>
@@ -272,7 +290,7 @@
       </a>
 
       <!-- 2 -->
-      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item telegram-link">
         <div class="feature-icon-wrap" style="color: #00b0ff;">
           <i class="fa-solid fa-microchip"></i>
         </div>
@@ -281,7 +299,7 @@
       </a>
 
       <!-- 3 -->
-      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item telegram-link">
         <div class="feature-icon-wrap" style="color: #ffb703;">
           <i class="fa-solid fa-shield-halved"></i>
         </div>
@@ -290,7 +308,7 @@
       </a>
 
       <!-- 4 -->
-      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item telegram-link">
         <div class="feature-icon-wrap" style="color: #a855f7;">
           <i class="fa-solid fa-graduation-cap"></i>
         </div>
@@ -299,7 +317,7 @@
       </a>
 
       <!-- 5 -->
-      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item telegram-link">
         <div class="feature-icon-wrap" style="color: #00e676;">
           <i class="fa-solid fa-gem"></i>
         </div>
@@ -308,7 +326,7 @@
       </a>
 
       <!-- 6 -->
-      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item">
+      <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="feature-item telegram-link">
         <div class="feature-icon-wrap" style="color: #38bdf8;">
           <i class="fa-solid fa-headset"></i>
         </div>
@@ -319,7 +337,7 @@
     </div>
 
     <!-- زر تأكيدي سفلي -->
-    <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="glowing-btn">
+    <a href="https://t.me/+JmSkTIgO14hiMzY0" target="_blank" class="glowing-btn telegram-link">
       <i class="fa-solid fa-arrow-left"></i>
       <span>دخول القناة الآن</span>
     </a>
@@ -330,6 +348,31 @@
     </footer>
 
   </main>
+
+  <!-- سكريبت إرسال القيمة المتغيرة (5 إلى 9 جنيه مصري) مع كل ضغطة -->
+  <script>
+    document.querySelectorAll('.telegram-link').forEach(function(element) {
+      element.addEventListener('click', function() {
+        if (typeof fbq === 'function') {
+          // حساب قيمة عشوائية بين 5.00 و 9.00 جنيه مصري
+          var randomValue = (Math.random() * (9 - 5) + 5).toFixed(2);
+          var floatVal = parseFloat(randomValue);
+
+          // إرسال حدث الاشتراك بالقيمة والعملة
+          fbq('track', 'Subscribe', {
+            value: floatVal,
+            currency: 'EGP'
+          });
+
+          // إرسال حدث العميل المحتمل بالقيمة والعملة
+          fbq('track', 'Lead', {
+            value: floatVal,
+            currency: 'EGP'
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
